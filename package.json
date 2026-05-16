@@ -4,10 +4,23 @@
   "main": "app.js",
   "type": "module",
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "dev": "node --watch app.js"
   },
   "dependencies": {
-    "cheerio": "^1.0.0-rc.12",
-    "express": "^4.19.2"
-  }
+    "cheerio": "^1.2.0",
+    "express": "^4.22.2"
+  },
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FelipeAriel176/Actividad-2.6-Cheerio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FelipeAriel176/Actividad-2.6-Cheerio/issues"
+  },
+  "homepage": "https://github.com/FelipeAriel176/Actividad-2.6-Cheerio#readme"
 }

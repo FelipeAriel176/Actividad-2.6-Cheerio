@@ -1,10 +1,10 @@
 import { Router } from 'express';
-import * as libroController from '../controllers/libroController.js';
+import { getLibros, getLibrosDisponibles, getLibrosPorCategoria } from '../controllers/libroController.js';
 
 const router = Router();
 
-router.get('/', libroController.getLibros);
-router.get('/disponibles', libroController.getDisponibles);
-router.get('/categoria/:categoria', libroController.getPorCategoria);
+router.get('/libros', getLibros);
+router.get('/libros/disponibles', getLibrosDisponibles);
+router.get('/libros/categoria/:categoria', getLibrosPorCategoria);
 
 export default router;

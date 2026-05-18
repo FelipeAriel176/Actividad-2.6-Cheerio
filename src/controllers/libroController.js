@@ -30,7 +30,6 @@ export const getLibrosPorCategoria = (req, res) => {
   try {
     const { categoria } = req.params;
 
-    // Validación básica: que el parámetro no venga vacío o lleno de espacios
     if (!categoria || categoria.trim() === '') {
       return res.status(400).json({
         exito: false,
@@ -40,7 +39,6 @@ export const getLibrosPorCategoria = (req, res) => {
 
     const librosFiltrados = libroService.obtenerLibrosPorCategoria(categoria);
 
-    // Validación de categoría inexistente o vacía (Error 404)
     if (librosFiltrados.length === 0) {
       return res.status(404).json({
         exito: false,

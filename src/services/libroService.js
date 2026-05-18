@@ -1,5 +1,4 @@
 import { parsearLibros } from '../utils/htmlParser.js';
-
 export const obtenerTodosLosLibros = () => {
   return parsearLibros();
 };
@@ -11,6 +10,5 @@ export const obtenerLibrosDisponibles = () => {
 
 export const obtenerLibrosPorCategoria = (categoria) => {
   const libros = parsearLibros();
-  // Normalizamos el parámetro a minúsculas para asegurar la coincidencia con el HTML
   return libros.filter(libro => libro.categoria === categoria.toLowerCase());
 };
